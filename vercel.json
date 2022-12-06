@@ -11,20 +11,12 @@
       }
     ],
     "routes": [
-      {
-        "src": "/categories/(.*)",
-        "dest": "index.js"
-      },
-      {
-        "src": "/questions/(.*)",
-        "dest": "index.js"
-      },
         {
-            "src": "/questions",
+            "src": "/",
             "dest": "index.js"
         },
         {
-            "src": "/",
+            "src": "/(.*)",
             "dest": "index.js"
         },
         {
