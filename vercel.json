@@ -3,7 +3,7 @@
     "builds": [
       {
         "src": "index.js",
-        "use": "@vercel/node"
+        "use": "@now/node"
       },
       {
         "src": "public/**",
@@ -17,14 +17,6 @@
       },
       {
         "src": "/(.*)",
-        "dest": "public/$1"
-      },
-      {
-        "src": "/categories",
-        "dest": "index.js"
-      },
-      {
-        "src": "/questions",
         "dest": "index.js"
       }
     ]
