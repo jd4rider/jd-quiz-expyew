@@ -16,11 +16,15 @@
             "dest": "index.js"
         },
         {
-            "src": "/(.*)",
+            "src": "/c(.*)",
             "dest": "index.js"
         },
         {
-            "src": "/(.+)",
+            "src": "/q(.*)",
+            "dest": "index.js"
+        },
+        {
+            "src": "/(.*)",
             "dest": "/public/$1"
         }
     ]
