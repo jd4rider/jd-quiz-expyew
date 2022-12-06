@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 3000
+const path = require('path')
 
 //const cors = require('cors')
 const fetch = (...args) =>
@@ -11,6 +12,11 @@ app.use(express.json());
 //app.use(cors());
 
 app.use(express.static('./public'));
+
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, '/public/index.html'));
+});
+
 
 app.get('/categories', (req, res) => {
   fetch('https://opentdb.com/api_category.php')
